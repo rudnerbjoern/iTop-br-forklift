@@ -10,7 +10,7 @@
 
 SetupWebPage::AddModule(
     __FILE__,
-    'br-forklift-bridge-for-teemip-ip-mgmt/0.0.1',
+    'br-forklift-bridge-for-teemip-ip-mgmt/0.1.0',
     array(
         // Identification
         //
@@ -21,9 +21,9 @@ SetupWebPage::AddModule(
         //
         'dependencies' => array(
             'itop-endusers-devices/2.7.0',
-            'br-forklift/0.0.1||teemip-ip-mgmt/3.0.0',
-            'br-forklift/0.0.1||teemip-config-mgmt-adaptor/3.0.0',
-            'br-forklift/0.0.1',
+            'br-forklift/0.1.0||teemip-ip-mgmt/3.0.0',
+            'br-forklift/0.1.0||teemip-config-mgmt-adaptor/3.0.0',
+            'br-forklift/0.1.0',
         ),
         'mandatory' => false,
         'visible' => true, // To prevent auto-install but shall not be listed in the install wizard
