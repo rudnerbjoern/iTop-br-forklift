@@ -8,6 +8,7 @@
  * Localized data
  */
 
+/** @disregard P1009 Undefined type Dict */
 Dict::Add('DE DE', 'German', 'Deutsch', array(
     'Class:Forklift/Attribute:macaddress' => 'MAC Adresse',
     'Class:Forklift/Attribute:macaddress+' => '',
