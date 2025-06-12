@@ -1,16 +1,17 @@
 <?php
 
 /**
- * @copyright   Copyright (C) 2024 Björn Rudner
+ * @copyright   Copyright (C) 2024-2025 Björn Rudner
  * @license     https://www.gnu.org/licenses/gpl-3.0.en.html
- * @version     2024-09-05
+ * @version     2025-06-12
  *
  * iTop module definition file
  */
 
+/** @disregard P1009 Undefined type SetupWebPage */
 SetupWebPage::AddModule(
     __FILE__, // Path to the current file, all other file names are relative to the directory containing this file
-    'br-forklift/3.1.1',
+    'br-forklift/3.2.0',
     array(
         // Identification
         //
@@ -20,8 +21,8 @@ SetupWebPage::AddModule(
         // Setup
         //
         'dependencies' => array(
-            'itop-structure/3.0.0',
-            'itop-endusers-devices/3.0.0',
+            'itop-config-mgmt/3.2.0',
+            'itop-endusers-devices/3.2.0',
         ),
         'mandatory' => false,
         'visible' => true,

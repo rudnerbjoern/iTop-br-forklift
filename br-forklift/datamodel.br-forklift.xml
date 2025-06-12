@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.7">
+<itop_design version="3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/rudnerbjoern/iTop-schema/refs/heads/main/3.2/itop_design.xsd">
     <!--
     * @copyright   Copyright (C) 2024 Björn Rudner
     * @license     https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -25,7 +25,6 @@
                 <style>
                     <icon>images/forklift_256.png</icon>
                 </style>
-                <icon>images/forklift.png</icon>
                 <reconciliation>
                     <attributes>
                         <attribute id="name" />
@@ -205,7 +204,9 @@
             <fields>
                 <field id="type" xsi:type="AttributeEnum">
                     <values>
-                        <value id="Forklift" _delta="define">Forklift</value>
+                        <value id="Forklift" _delta="define">
+                            <code>Forklift</code>
+                        </value>
                     </values>
                 </field>
             </fields>
@@ -227,9 +228,13 @@
             </definition>
         </menu>
     </menus>
-    <group id="Configuration">
-        <classes>
-            <class id="Forklift" _delta="define" />
-        </classes>
-    </group>
+    <user_rights>
+        <groups>
+            <group id="Configuration">
+                <classes>
+                    <class id="Forklift" _delta="define" />
+                </classes>
+            </group>
+        </groups>
+    </user_rights>
 </itop_design>
