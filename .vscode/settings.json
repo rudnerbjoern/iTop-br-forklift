@@ -17,5 +17,8 @@
         "providercontracts",
         "serialnumber",
         "teemip"
-    ]
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "editor.formatOnPaste": true
 }
